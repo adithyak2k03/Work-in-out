@@ -3,10 +3,14 @@ function getCurrentTime() {
     const hours = String(now.getHours()).padStart(2, '0');
     const minutes = String(now.getMinutes()).padStart(2, '0');
     const currentTime = `${hours}:${minutes}`;
-    document.getElementById('timeInput').value = currentTime;
+    const x = document.getElementById('timeInput').value;
+    if (x===""){
+        document.getElementById('timeInput').value = currentTime;
+    }
 }
 
 function calculateOutTime() {
+
     const inputTime = document.getElementById('timeInput').value;
     const fixedTime = '09:00';
     const timeToAdd = 9; // Always 9 hours
