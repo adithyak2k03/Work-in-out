@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time Calculator</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div id="clock"></div> <!-- Clock display -->
+    <label for="timeInput">Log In Time:</label>
+    <input type="text" id="timeInput" placeholder="Enter time">
+    <input type="button" value="Get current time" onclick="getCurrentTime()">
+    <br>    
+    <label for="fixedTimeInput">Work Hours:</label>
+    <input type="text" id="fixedTimeInput" value="09:00" readonly>
+    <br>
+    <input type="button" value="Get out time" onclick="calculateOutTime()">
+    <br>
+    <label for="output">Log Out Time:</label>
+    <output id="output"></output>
+    <br>
+    
+</div>
+
+<script src="index.js" type="text/javascript"></script>
+
+
+</body>
+</html>
